@@ -15,7 +15,7 @@ export default function SignUp() {
           <p>Aplicação para acompanhar tudo que assistir.</p>
         </div>
 
-        <h2>Faça seu login</h2>
+        <h2>Crie sua conta</h2>
 
         <Input icon={ FiUser } placeholder="Nome"/>
         <Input icon={ FiMail } placeholder="E-mail"/>
@@ -23,7 +23,7 @@ export default function SignUp() {
 
         <Button title="Cadastrar"/>
 
-        <ButtonText title="Voltar para o login" icon={ FiArrowLeft } />
+        <ButtonText title="Voltar para o login" icon={ FiArrowLeft } to="/signIn" />
       </form>
 
       <aside className="background"></aside>

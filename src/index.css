@@ -36,3 +36,7 @@ button:hover,
 textarea:hover {
   opacity: .9;
 }
+
+a {
+  text-decoration: none;
+}

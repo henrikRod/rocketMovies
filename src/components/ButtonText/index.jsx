@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import "./styles.css";
 
 export function ButtonText({ title, icon: Icon, ...rest} ) {
   return (
-    <button className="customButtonText">
+    <Link className="customButtonText" {...rest}>
       {Icon && <Icon size={20} />}
       {title}
-    </button>
+    </Link>
   )
 }

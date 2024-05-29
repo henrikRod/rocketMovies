@@ -1,0 +1,44 @@
+#signInPage {
+  height: 100vh;
+  display: flex;
+}
+
+#signInPage form {
+  width: 637px;
+
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+
+  padding-inline: 100px;
+}
+
+#signInPage form > h2 {
+  margin-block: 48px;
+  
+  color: white;
+}
+
+#signInPage .title h1 {
+  font-size: 48px;
+  color: var(--primaryColor);
+}
+
+#signInPage .title p {
+  color: var(--gray);
+  font-size: 14px;
+}
+
+#signInPage .customButton {
+  margin-top: 16px;
+}
+
+#signInPage .customButtonText {
+  margin-top: 48px;
+}
+
+.background {
+  flex: 1;
+  background: url("../../assets/background.png") no-repeat center center;
+  background-size: cover;
+}
