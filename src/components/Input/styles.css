@@ -1,0 +1,30 @@
+.inputContainer {
+  display: flex;
+  align-items: center;
+
+  background-color: var(--gray-200);
+
+  padding: 16px;
+  margin-bottom: 8px;
+
+  border-radius: 10px;
+
+  color: var(--secondaryColor);
+}
+
+.inputContainer input {
+  background: none;
+  border: none;
+  outline: none;
+
+  font-size: 16px;
+  color: var(--secondaryColor);
+}
+
+.inputContainer input::placeholder {
+  color: var(--secondaryColor);
+}
+
+.inputContainer svg {
+  margin-right: 16px;
+}

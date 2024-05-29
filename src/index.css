@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+:root {
+  --primaryColor: #FF859B;
+  --secondaryColor: #948F99;
+  --gray: #CAC4CF;
+  --gray-200: #262529;
+  --gray-400: #1C1B1E;
+  --gray-600: #312E38;
+  --gray-900: #0D0C0F;
+  --main-font: "Roboto Slab", serif;
+}
+
+* {   
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: var(--gray-400);
+  font-family: var(--main-font);
+}
+
+input,
+button,
+textarea {
+  font-family: var(--main-font);
+  transition: .1s;
+}
+
+input:hover,
+button:hover,
+textarea:hover {
+  opacity: .9;
+}

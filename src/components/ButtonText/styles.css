@@ -1,0 +1,28 @@
+.customButtonText  {
+  width: 100%;
+  background: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--primaryColor);
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  border: none;
+  outline: none;
+  border-radius: 10px;
+
+}
+
+.customButtonText:hover {
+  color: white;
+}
+
+.customButtonText svg {
+  margin-right: 16px;
+}
+

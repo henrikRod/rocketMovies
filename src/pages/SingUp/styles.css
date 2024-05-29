@@ -1,0 +1,44 @@
+#signUpPage {
+  height: 100vh;
+  display: flex;
+}
+
+#signUpPage form {
+  width: 637px;
+
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+
+  padding-inline: 100px;
+}
+
+#signUpPage form > h2 {
+  margin-block: 48px;
+  
+  color: white;
+}
+
+#signUpPage .title h1 {
+  font-size: 48px;
+  color: var(--primaryColor);
+}
+
+#signUpPage .title p {
+  color: var(--gray);
+  font-size: 14px;
+}
+
+.background {
+  flex: 1;
+  background: url("../../assets/background.png") no-repeat center center;
+  background-size: cover;
+}
+
+#signUpPage .customButton {
+  margin-top: 8px;
+}
+
+#signUpPage .customButtonText {
+  margin-top: 48px;
+}
