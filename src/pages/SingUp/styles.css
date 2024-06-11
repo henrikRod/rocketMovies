@@ -3,6 +3,10 @@
   display: flex;
 }
 
+#signUpPage input {
+  margin-bottom: 8px;
+}
+
 #signUpPage form {
   width: 637px;
 

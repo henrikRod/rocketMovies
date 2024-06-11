@@ -3,6 +3,10 @@
   display: flex;
 }
 
+#signInPage input {
+  margin-bottom: 8px;
+}
+
 #signInPage form {
   width: 637px;
 

@@ -1,5 +1,12 @@
+import Header from "../../components/Header"
+
+import "./styles.css";
+
 export default function Home() {
   return(
-    <>Home</>
+    <div id="home">
+      <Header />
+      <main className="container"></main>
+    </div>
   )
 };

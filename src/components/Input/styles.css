@@ -5,11 +5,12 @@
   background-color: var(--gray-200);
 
   padding: 16px;
-  margin-bottom: 8px;
 
   border-radius: 10px;
 
   color: var(--secondaryColor);
+
+  width: 100%;
 }
 
 .inputContainer input {

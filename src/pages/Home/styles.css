@@ -1,0 +1,16 @@
+#home {
+  display: grid;
+  grid-template-rows: 116px 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "header"
+    "main"
+  ;
+
+  margin: 0 auto;
+}
+
+#home main {
+  grid-area: main;
+}
+

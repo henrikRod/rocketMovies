@@ -7,6 +7,7 @@
   --gray-200: #262529;
   --gray-400: #1C1B1E;
   --gray-600: #312E38;
+  --gray-700: #3E3B47;
   --gray-900: #0D0C0F;
   --main-font: "Roboto Slab", serif;
 }
@@ -39,4 +40,10 @@ textarea:hover {
 
 a {
   text-decoration: none;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
 }
