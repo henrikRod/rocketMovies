@@ -4,6 +4,7 @@
   --primaryColor: #FF859B;
   --secondaryColor: #948F99;
   --gray: #CAC4CF;
+  --gray-100: #999591;
   --gray-200: #262529;
   --gray-400: #1C1B1E;
   --gray-600: #312E38;
@@ -23,6 +24,7 @@ body {
   height: 100vh;
   background: var(--gray-400);
   font-family: var(--main-font);
+  overflow-x: hidden;
 }
 
 input,

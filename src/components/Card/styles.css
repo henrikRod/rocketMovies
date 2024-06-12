@@ -1,0 +1,44 @@
+#card {
+  width: 100%;
+
+  padding: 32px;
+
+  background-color: hsla(349, 100%, 76%, .05);
+  color: white;
+
+  border: none;
+  outline: none;
+
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  cursor: pointer;
+}
+
+#card h1 {
+  font-size: 24px;
+}
+
+#card .starsContainer {
+  display: flex;
+  gap: 5px;
+}
+
+#card .description {
+  margin-block: 5px;
+  color: var(--gray-100);
+}
+
+#card .tagsContainer {
+  display: flex;
+  gap: 8px;
+}
+
+#card .tagsContainer div {
+  padding: 5px 16px;
+  background-color: var(--gray-600);
+  border-radius: 8px;
+}
