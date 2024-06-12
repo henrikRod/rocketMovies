@@ -13,7 +13,9 @@ export default function Header() {
             <strong>Henrik Rodrigues</strong>
             <a href="#">sair</a>
           </div>
-          <img src="https://github.com/henrikRod.png" />
+          <a href="#">
+            <img src="https://github.com/henrikRod.png" />
+          </a>
         </aside>
       </div>
     </header>

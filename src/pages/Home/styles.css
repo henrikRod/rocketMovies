@@ -6,11 +6,48 @@
     "header"
     "main"
   ;
+  align-items: center;
 
   margin: 0 auto;
+
+  height: 100vh;
 }
 
 #home main {
   grid-area: main;
 }
 
+#home main .titleContainer {
+  display: flex;
+  justify-content: space-between;
+
+  color: white;
+
+  margin-bottom: 60px;
+}
+
+#home main .titleContainer button {
+  width: 207px;
+}
+
+#home main section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  overflow-y: auto;
+  max-height: 620px;
+
+  margin-bottom: 24px;
+  padding-right: 8px;
+}
+
+#home main section::-webkit-scrollbar {
+  background: none;
+  width: 8px;
+}
+
+#home main section::-webkit-scrollbar-thumb{
+  background-color: var(--primaryColor);
+  border-radius: 10px;
+}
