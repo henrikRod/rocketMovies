@@ -5,7 +5,7 @@ import "./styles.css";
 
 export default function Header() {
   return (
-    <header>
+    <header id="mainHeader">
       <div className="container">
         <h1>RocketMovies</h1>
         <Input placeholder="Pesquisar pelo título" />
