@@ -1,4 +1,5 @@
 import { Input } from "../Input";
+import { Link } from "react-router-dom";
 
 import "./styles.css";
 
@@ -13,9 +14,9 @@ export default function Header() {
             <strong>Henrik Rodrigues</strong>
             <a href="#">sair</a>
           </div>
-          <a href="#">
+          <Link to="/profile">
             <img src="https://github.com/henrikRod.png" />
-          </a>
+          </Link>
         </aside>
       </div>
     </header>

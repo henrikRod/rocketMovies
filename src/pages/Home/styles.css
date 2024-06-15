@@ -6,7 +6,6 @@
     "header"
     "main"
   ;
-  align-items: center;
 
   margin: 0 auto;
 
@@ -15,6 +14,8 @@
 
 #home main {
   grid-area: main;
+
+  margin-top: 48px;
 }
 
 #home main .titleContainer {
