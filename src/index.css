@@ -36,7 +36,8 @@ textarea {
 
 input:hover,
 button:hover,
-textarea:hover {
+textarea:hover,
+a:hover {
   opacity: .9;
 }
 

@@ -18,25 +18,36 @@ export default function Home() {
 
         <section>
           <Card 
-            title="Mensagem de Erro"
-            grade={3}
-            description="TypeError: Cannot read properties of undefined (reading 'map') at Card (index.jsx:39:15)" tags={["Ficção", "Aventura", "Comédia"]}
+            data = {
+              {
+                title: "Mensagem A",
+                grade: 3,
+                description: "TypeError: Cannot read properties of undefined (reading 'map') at Card (index.jsx:39:15)",
+                tags: ["Ficção", "Aventura", "Comédia"]
+              }
+            }
           />
           <Card 
-            title="Outra mensagem de erro, teste"
-            grade={2}
-            description="TypeError: Cannot read properties of undefined (reading 'map') at Card (index.jsx:39:15)" tags={["Ficção", "Aventura", "Comédia"]}
+            data = {
+              {
+                title: "Mensagem B",
+                grade: 1,
+                description: "TypeError: Cannot read properties of undefined (reading 'map') at Card (index.jsx:39:15)",
+                tags: ["Ficção", "Aventura", "Comédia"]
+              }
+            }
           />
           <Card 
-            title="Outra mensagem de erro, teste"
-            grade={2}
-            description="TypeError: Cannot read properties of undefined (reading 'map') at Card (index.jsx:39:15)" tags={["Ficção", "Aventura", "Comédia"]}
+            data = {
+              {
+                title: "Mensagem C",
+                grade: 5,
+                description: "TypeError: Cannot read properties of undefined (reading 'map') at Card (index.jsx:39:15)",
+                tags: ["Ficção", "Aventura", "Comédia"]
+              }
+            }
           />
-          <Card 
-            title="Outra mensagem de erro, teste"
-            grade={2}
-            description="TypeError: Cannot read properties of undefined (reading 'map') at Card (index.jsx:39:15)" tags={["Ficção", "Aventura", "Comédia"]}
-          />
+
         </section>
 
       </main>

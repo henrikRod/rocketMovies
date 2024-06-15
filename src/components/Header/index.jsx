@@ -12,7 +12,7 @@ export default function Header() {
         <aside>
           <div>
             <strong>Henrik Rodrigues</strong>
-            <a href="#">sair</a>
+            <Link to="/signUp">sair</Link>
           </div>
           <Link to="/profile">
             <img src="https://github.com/henrikRod.png" />

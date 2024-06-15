@@ -1,25 +1,22 @@
-import startFillImg from "../../assets/starFill.svg";
-import startImg from "../../assets/star.svg";
+import starFillImg from "../../assets/starFill.svg";
+import starImg from "../../assets/star.svg";
 
 import "./styles.css";
+import { Link } from "react-router-dom";
 
-export function Card({title, tags, grade, description}) {
+export function Card({ data }) {
   return (
-    <button id="card">
-      <h1>{ title }</h1>
+    <Link id="card" to="">
+      <h1>{ data.title }</h1>
 
       <div className="starsContainer">
-        { Array.from({length: 5}).map( (_, index ) => {
-          return (
-            <img src={index < grade ? startFillImg : startImg} key={index} alt="Star"/>
-          )
-        })} 
+        { Array.from({length: 5}).map( (_, index ) =>  <img src={index < data.grade ? starFillImg : starImg} key={index} alt="Star"/> )} 
       </div>
 
-      <p className="description">{ description }</p>
+      <p className="description">{ data.description }</p>
 
       <div className="tagsContainer">
-        {tags.map((tag) => {
+        {data.tags.map((tag) => {
           return (
             <div key={tag}>
               { tag }
@@ -27,6 +24,6 @@ export function Card({title, tags, grade, description}) {
           )
         })}
       </div>
-    </button>
+    </Link>
   )
 }
