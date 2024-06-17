@@ -1,10 +1,10 @@
-#mainHeader header {
+#mainHeader {
   border-bottom: 1px solid var(--gray-700);
   display: flex;
   justify-content: center;
 }
 
-#mainHeader header div {
+#mainHeader div {
   grid-area: header div;
   display: flex;
   justify-content: space-between;
@@ -14,19 +14,19 @@
   width: 100%;
 }
 
-#mainHeader header div h1 {
+#mainHeader div h1 {
   font-size: 24px;
   color: var(--primaryColor);
 }
 
-#mainHeader header div aside {
+#mainHeader div aside {
   font-size: 14px;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-#mainHeader header div aside img {
+#mainHeader div aside img {
   width: 64px;
   height: 64px;
 
@@ -34,14 +34,14 @@
   border: 1px solid var(--gray-700);
 }
 
-#mainHeader header div aside > div {
+#mainHeader div aside > div {
   display: flex;
   flex-direction: column;
   gap: 2px;
   align-items: end;
 }
 
-#mainHeader header div aside strong {
+#mainHeader div aside strong {
   color: white;
   font-weight: bold;
   max-width: 150px;
@@ -49,7 +49,7 @@
   overflow: hidden;
 }
 
-#mainHeader header div aside a {
+#mainHeader div aside a {
   color: var(--secondaryColor);
   margin-top: 5px;
 }
