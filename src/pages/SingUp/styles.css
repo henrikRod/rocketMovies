@@ -3,7 +3,7 @@
   display: flex;
 }
 
-#signUpPage input {
+#signUpPage .inputContainer {
   margin-bottom: 8px;
 }
 

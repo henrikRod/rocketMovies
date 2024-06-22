@@ -1,0 +1,28 @@
+.tag {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  color: white;
+
+  border-radius: 10px;
+
+  padding: 16px;
+
+  background: var(--gray-200);
+
+  width: fit-content;
+
+  user-select: none;
+}
+
+.tag button {
+  background: none;
+
+  display: flex;
+
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+}

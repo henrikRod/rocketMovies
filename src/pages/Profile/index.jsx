@@ -10,7 +10,7 @@ export default function Profile() {
     <div id="profile">
       <header>
         <div className="container">
-          <ButtonText icon={ FiArrowLeft } title="Voltar" />
+          <ButtonText icon={ FiArrowLeft } title="Voltar" to="/"/>
 
           <aside className="profileImgContainer">
             <img src="https://github.com/henrikRod.png" />

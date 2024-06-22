@@ -22,3 +22,20 @@
 .customButton svg {
   margin-right: 16px;
 }
+
+.customButton.btnDashed {
+  border: 2px dashed var(--secondaryColor);
+  background: none;
+  color: var(--secondaryColor);
+  flex-direction: row-reverse;
+}
+
+.customButton.btnDashed svg {
+  margin: 0 0 0 13px;
+  color: var(--primaryColor);
+}
+
+.customButton.btnReverse {
+  background-color: var(--gray-900);
+  color: var(--primaryColor);
+}

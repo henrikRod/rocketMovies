@@ -34,9 +34,7 @@ textarea {
   transition: .1s;
 }
 
-input:hover,
 button:hover,
-textarea:hover,
 a:hover {
   opacity: .9;
 }

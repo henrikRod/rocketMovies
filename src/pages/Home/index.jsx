@@ -13,7 +13,7 @@ export default function Home() {
 
         <div className="titleContainer">
           <h1>Meus filmes</h1>
-          <Button icon={FiPlus} title="Adicionar filme"/>
+          <Button icon={FiPlus} title="Adicionar filme" to="/newMovie" />
         </div>
 
         <section>
