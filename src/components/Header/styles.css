@@ -27,14 +27,6 @@
   gap: 10px;
 }
 
-#mainHeader div aside img {
-  width: 64px;
-  height: 64px;
-
-  border-radius: 100%;
-  border: 1px solid var(--gray-700);
-}
-
 #mainHeader div aside > div {
   display: flex;
   flex-direction: column;

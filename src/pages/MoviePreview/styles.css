@@ -1,0 +1,90 @@
+#moviePreviewPage {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  margin-top: 40px;
+
+  color: white;
+
+  padding-bottom: 20px;
+}
+
+#moviePreviewPage .introduction > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  width: fit-content;
+}
+
+#moviePreviewPage .introduction > div:first-child {
+  margin-bottom: 20px;
+}
+
+#moviePreviewPage .introduction > div .starsContainer {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+#moviePreviewPage .introduction > div .star {
+  width: 20px;
+}
+
+#moviePreviewPage .introduction > div h1 {
+  color: white;
+  font-size: 36px;
+}
+
+#moviePreviewPage .introduction > div.authorInfos a {
+  width: 16px;
+  height: 16px;
+}
+
+#moviePreviewPage .introduction > div.authorInfos a img {
+  width: 100%;
+  height: 100%;
+}
+
+#moviePreviewPage .introduction > div span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#moviePreviewPage .tagsContainer {
+  display: flex;
+  gap: 8px;
+}
+
+#moviePreviewPage .tagsContainer div {
+  padding: 5px 16px;
+  background-color: var(--gray-600);
+  border-radius: 8px;
+}
+
+#moviePreviewPage .descriptionContainer{
+  overflow-y: auto;
+
+  max-height: 450px;
+
+  padding-right: 20px;
+
+  text-align: justify;
+}
+
+#moviePreviewPage .descriptionContainer p {
+  padding-bottom: 20px;
+}
+
+#moviePreviewPage .descriptionContainer::-webkit-scrollbar {
+  background: none;
+  width: 8px;
+}
+
+#moviePreviewPage .descriptionContainer::-webkit-scrollbar-thumb{
+  background-color: var(--primaryColor);
+  border-radius: 10px;
+}

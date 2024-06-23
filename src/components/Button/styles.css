@@ -19,6 +19,10 @@
   padding: 13px;
 }
 
+a.customButton {
+  width: fit-content;
+}
+
 .customButton svg {
   margin-right: 16px;
 }

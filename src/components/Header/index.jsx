@@ -1,5 +1,6 @@
 import { Input } from "../Input";
 import { Link } from "react-router-dom";
+import ProfileImg from "../ProfileImg";
 
 import "./styles.css";
 
@@ -14,9 +15,7 @@ export default function Header() {
             <strong>Henrik Rodrigues</strong>
             <Link to="/signUp">sair</Link>
           </div>
-          <Link to="/profile">
-            <img src="https://github.com/henrikRod.png" />
-          </Link>
+          <ProfileImg />
         </aside>
       </div>
     </header>
