@@ -31,3 +31,15 @@
 .inputContainer svg {
   margin: 16px;
 }
+
+.newTag {
+  border: 2px dashed var(--secondaryColor);
+  background: none;
+  color: var(--secondaryColor);
+  flex-direction: row-reverse;
+  width: 200px;
+} 
+
+.newTag svg {
+  cursor: pointer;
+}

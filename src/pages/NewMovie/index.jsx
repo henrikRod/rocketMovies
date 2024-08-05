@@ -30,7 +30,11 @@ export default function NewMovie() {
             <Tag title="aaaa"/>
             <Tag title="aaaa"/>
             
-            <Button title="Novo marcador" icon={ FiPlus } btnStyle="btnDashed"/>
+            <Input 
+              isNewTag 
+              placeholder="Novo marcador" 
+              icon={ FiPlus }
+            />
           </div>
         </section>
 

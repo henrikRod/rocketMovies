@@ -1,9 +1,9 @@
 import "./styles.css"
 
-export function Input({icon: Icon, ...rest}) {
+export function Input({icon: Icon, isNewTag, ...rest}) {
   return(
-    <div className="inputContainer">
-      {Icon && <Icon size={20}/>}
+    <div className={`inputContainer ${isNewTag ? "newTag" : ""}`} >
+      {Icon && <Icon size={22}/>}
       <input {...rest} />
     </div>
   )
