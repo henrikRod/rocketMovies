@@ -10,16 +10,16 @@ export function Card({ data }) {
       <h1>{ data.title }</h1>
 
       <div className="starsContainer">
-        { Array.from({length: 5}).map( (_, index ) =>  <img src={index < data.grade ? starFillImg : starImg} key={index} alt="Star"/> )} 
+        { Array.from({length: 5}).map( (_, index ) =>  <img src={index < data.rating ? starFillImg : starImg} key={index} alt="Star"/> )} 
       </div>
 
       <p className="description">{ data.description }</p>
 
       <div className="tagsContainer">
-        {data.tags.map((tag) => {
+        {data.tags.map((tag, index) => {
           return (
-            <div key={tag}>
-              { tag }
+            <div key={index}>
+              { tag.name }
             </div>
           )
         })}

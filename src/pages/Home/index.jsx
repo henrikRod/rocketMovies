@@ -1,14 +1,32 @@
-import Header from "../../components/Header";
+import { useEffect, useState } from "react";
+
+import { api } from "../../services/api";
+
 import { Button } from "../../components/Button";
-import { FiPlus } from "react-icons/fi";
+import Header from "../../components/Header";
 import { Card } from "../../components/Card";
+import { FiPlus } from "react-icons/fi";
 
 import "./styles.css";
 
 export default function Home() {
+  const [ search, setSearch ] = useState("");
+  const [ notes, setNotes ] = useState([]);
+  
+  useEffect(() => {
+    async function fetchNotes() {
+      const response = await api.get(`/movieNotes?title=${search}`);
+      setNotes(response.data);
+    };
+
+    fetchNotes();
+  }, [search])
+
   return(
     <div id="home">
-      <Header />
+      <Header 
+        setSearch={ setSearch }
+      />
       <main className="container">
 
         <div className="titleContainer">
@@ -17,37 +35,9 @@ export default function Home() {
         </div>
 
         <section>
-          <Card 
-            data = {
-              {
-                title: "Mensagem A",
-                grade: 3,
-                description: "TypeError: Cannot read properties of undefined (reading 'map') at Card (index.jsx:39:15)",
-                tags: ["Ficção", "Aventura", "Comédia"]
-              }
-            }
-          />
-          <Card 
-            data = {
-              {
-                title: "Mensagem B",
-                grade: 1,
-                description: "TypeError: Cannot read properties of undefined (reading 'map') at Card (index.jsx:39:15)",
-                tags: ["Ficção", "Aventura", "Comédia"]
-              }
-            }
-          />
-          <Card 
-            data = {
-              {
-                title: "Mensagem C",
-                grade: 5,
-                description: "TypeError: Cannot read properties of undefined (reading 'map') at Card (index.jsx:39:15)",
-                tags: ["Ficção", "Aventura", "Comédia"]
-              }
-            }
-          />
-
+          { notes.map( note => (
+            <Card data={note} key={String(note.id)} />
+          ))}
         </section>
 
       </main>
