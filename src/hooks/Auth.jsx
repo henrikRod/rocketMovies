@@ -34,6 +34,20 @@ export default function AuthContextProvider({ children }) {
     setData({});
   };
 
+  useEffect(() => {
+    const user = localStorage.getItem("@rocketMovies:user");
+    const token = localStorage.getItem("@rocketMovies:token");
+
+    if( user && token ) {
+      api.defaults.headers.common["Authorization"] = `Bearer ${token}`;
+      
+      setData({
+        user: JSON.parse(user),
+        token
+      })
+    }
+  }, []);
+
   return (
     <AuthContext.Provider value={{
       signIn,
