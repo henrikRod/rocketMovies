@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export function Card({ data }) {
   return (
-    <Link id="card" to="">
+    <Link id="card" to={`/moviePreview/${data.id}`}>
       <h1>{ data.title }</h1>
 
       <div className="starsContainer">
