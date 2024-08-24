@@ -27,7 +27,7 @@ export default function AuthContextProvider({ children }) {
     };
   }
 
-  function singOut() {
+  function signOut() {
     localStorage.removeItem("@rocketMovies:user");
     localStorage.removeItem("@rocketMovies:token");
 
@@ -51,7 +51,7 @@ export default function AuthContextProvider({ children }) {
   return (
     <AuthContext.Provider value={{
       signIn,
-      singOut,
+      signOut,
       user: data.user
     }}>
       { children }

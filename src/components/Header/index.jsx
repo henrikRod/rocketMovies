@@ -2,9 +2,12 @@ import { Input } from "../Input";
 import { Link } from "react-router-dom";
 import ProfileImg from "../ProfileImg";
 
+import { useAuth } from "../../hooks/Auth";
+
 import "./styles.css";
 
 export default function Header({ setSearch }) {
+  const { signOut } = useAuth();
   return (
     <header id="mainHeader">
       <div className="container">
@@ -16,7 +19,12 @@ export default function Header({ setSearch }) {
         <aside>
           <div>
             <strong>Henrik Rodrigues</strong>
-            <Link to="/signUp">sair</Link>
+            <Link 
+              to="/"
+              onClick={signOut}
+            >
+              sair
+            </Link>
           </div>
           <ProfileImg />
         </aside>

@@ -24,6 +24,12 @@
   color: white;
 }
 
+.inputContainer input[type="number"]::-webkit-outer-spin-button,
+.inputContainer input[type="number"]::-webkit-inner-spin-button  {
+  appearance: none;
+  display: none;
+} 
+
 .inputContainer input::placeholder {
   color: var(--secondaryColor);
 }
