@@ -54,7 +54,7 @@ export default function MoviePreview() {
           </div>
 
           <div className="authorInfos">
-            <span><ProfileImg /> Por { user.name }</span>
+            <span><ProfileImg /> Por { user.userName }</span>
             <span><FiClock color="#FF859B" />{ noteData.updated_at }</span>
           </div>
 

@@ -34,6 +34,31 @@ export default function AuthContextProvider({ children }) {
     setData({});
   };
 
+  async function updateProfile({ user, avatarFile }) {
+    try {
+      if(avatarFile) {
+        const fileUploadForm = new FormData();
+        fileUploadForm.append("avatar", avatarFile);
+        const response = await api.patch("/avatar", fileUploadForm);
+        user.avatar = response.data.user.avatar;
+      };
+
+      await api.put("/users", user);
+      localStorage.setItem("@rocketMovies:user", JSON.stringify(user));
+
+      alert("Dados atualizados com sucesso");
+
+      setData({ user, token: data.token });
+
+    } catch (err) {
+      if(err.response) {
+        alert(err.response.data.message);
+      }else {
+        alert("Houve um erro ao atualizar os dados")
+      };
+    };
+  };
+
   useEffect(() => {
     const user = localStorage.getItem("@rocketMovies:user");
     const token = localStorage.getItem("@rocketMovies:token");
@@ -52,7 +77,8 @@ export default function AuthContextProvider({ children }) {
     <AuthContext.Provider value={{
       signIn,
       signOut,
-      user: data.user
+      updateProfile,
+      user: data.user,
     }}>
       { children }
     </AuthContext.Provider>

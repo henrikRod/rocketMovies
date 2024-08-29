@@ -27,6 +27,8 @@
 #profile header .profileImgContainer img {
   border-radius: 100%;
   width: 185px;
+  height: 185px;
+  object-fit: cover;
 }
 
 #profile header .profileImgContainer label {
